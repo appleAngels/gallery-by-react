@@ -38,12 +38,12 @@ module.exports = {
     module: {
         preLoaders: [{
             test: /\.(js|jsx)$/,
-            exclude: /node_modules/,
+            exclude: /(node_modules|dist)/,
             loader: 'eslint-loader'
         }],
         loaders: [{
             test: /\.(js|jsx)$/,
-            exclude: /node_modules/,
+            exclude: /(node_modules|dist)/,
             loader: 'react-hot!babel-loader'
         }, {
             test: /\.scss/,
